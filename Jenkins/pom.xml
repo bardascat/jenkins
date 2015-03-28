@@ -7,6 +7,16 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Jenkins Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+    <buildDirectory>C:\Users\Catalin\Downloads\apache-tomcat-7.0.59\webapps</buildDirectory>
+</properties>
+
+  <build>
+  	<finalName>jenkins-test</finalName>
+  	<directory>${buildDirectory}</directory>
+  </build>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,7 +25,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>Jenkins</finalName>
-  </build>
+
 </project>
